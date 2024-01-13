@@ -1,0 +1,33 @@
+/* Menu styles */
+.menu {
+    background-color: #333333;
+    width: 100%;
+    top: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+.menu ul {
+    list-style-type: none; /* Removes the bullets */
+    margin: 0; /* Removes the margins */
+    padding: 0; /* Removes the padding */
+    overflow: hidden;
+    text-align: right;
+    margin-right: 2%;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.menu li a:hover {
+    background-color: #111111;
+}

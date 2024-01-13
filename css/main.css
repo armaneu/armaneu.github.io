@@ -1,0 +1,26 @@
+:root {
+    --theme-color: rgb(243, 248, 244);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--theme-color);
+}
+
+header {
+    text-align: left;
+    margin-left: 2%;
+}
+
+article {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+section[id] {
+    scroll-margin-top: 60px; /* Avoid 'Header' hide the 'Section' */
+}
