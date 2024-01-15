@@ -1,33 +1,49 @@
-/* Menu styles */
-.menu {
-    background-color: #333333;
+/* Navigation bar */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-theme-color);
+    top: 0%;
+    left: 0%;
     width: 100%;
-    top: 0;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    box-shadow: 0px 4px 5px var(--navbar-shadow-color);
 }
 
-.menu ul {
-    list-style-type: none; /* Removes the bullets */
-    margin: 0; /* Removes the margins */
-    padding: 0; /* Removes the padding */
-    overflow: hidden;
-    text-align: right;
-    margin-right: 2%;
+/* Menu */
+.menu {
+    display: flex;  /* horizontal align of internal items */
+    list-style: none; /* removes the bullets */
+    margin: 0% var(--margin); /* reset margin */
+    padding: 0%; /* reset padding */
+    text-align: center;
+    align-items: center;
+    margin-left: auto;  /* align the menu to the right */
 }
 
 .menu li {
-    display: inline-block;
+    padding: 0% 15px;
 }
 
 .menu li a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
+    color: var(--text-color-inverse);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
     text-align: center;
-    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .menu li a:hover {
-    background-color: #111111;
+    background-color: var(--navbar-hover-color);
 }
+
+.open-menu, 
+.close-menu {
+    display: none;
+}
+
+
+

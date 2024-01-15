@@ -1,26 +1,51 @@
 :root {
-    --theme-color: rgb(243, 248, 244);
+    --theme-color: #f8f8f8;
+    --text-color: black;
+    --text-color-inverse: var(--theme-color);
+    --navbar-theme-color: #333333;
+    --navbar-shadow-color: #8a8a8a;
+    --navbar-hover-color: #2ccc39;
+    --margin: 2%;
+    --max-width: 1024px;
+    --mobile-menu-theme-color: #3a4460;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--theme-color);
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('../fonts/Noto_Sans_Mono/static/NotoSansMono-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('../fonts/Noto_Sans_Mono/static/NotoSansMono-Regular.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('../fonts/Noto_Sans_Mono/static/NotoSansMono-Regular.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('../fonts/Noto_Sans_Mono/static/NotoSansMono-Regular.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('../fonts/Noto_Sans_Mono/static/NotoSansMono-Regular.ttf') format('svg');               /* Legacy iOS */
 }
 
-header {
+body {
+    font-family: 'NotoSans-Regular', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    margin: 0% auto;
+    max-width: var(--max-width);
+}
+
+.topheader {
     text-align: left;
-    margin-left: 2%;
+    margin: 0% var(--margin);
+    top: 0%;
+    left: 0%;
+    width: 100%;
 }
 
 article {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0% var(--margin);
+    top: 0%;
+    left: 0%;
 }
 
 section[id] {
-    scroll-margin-top: 60px; /* Avoid 'Header' hide the 'Section' */
+    scroll-margin-top: 60px; /* avoid 'Header' hide the 'Section' */
+    text-align: justify;
 }
