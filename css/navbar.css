@@ -1,3 +1,25 @@
+/* Header */
+.topheader {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: var(--theme-color);
+}
+
+/* DIV which contains the H1 element */
+.topdiv {
+    top: 0%;
+    left: 0%;
+    max-width: var(--max-width);
+    margin: 0% auto;
+}
+
+.topdiv h1 {
+    margin: 0% var(--margin); /* reset margin */
+    line-height: 60px;
+}
+
 /* Navigation bar */
 .topnav {
     display: flex;
@@ -5,9 +27,8 @@
     background-color: var(--navbar-theme-color);
     top: 0%;
     left: 0%;
-    width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    max-width: var(--max-width);
+    margin: 0% auto;
     box-shadow: 0px 4px 5px var(--navbar-shadow-color);
 }
 

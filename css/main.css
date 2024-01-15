@@ -31,12 +31,10 @@ body {
     max-width: var(--max-width);
 }
 
-.topheader {
-    text-align: left;
-    margin: 0% var(--margin);
-    top: 0%;
-    left: 0%;
-    width: 100%;
+main {
+    background-color: aqua;
+    margin-top: 110px;
+    padding-top: 5px;
 }
 
 article {
@@ -46,6 +44,7 @@ article {
 }
 
 section[id] {
-    scroll-margin-top: 60px; /* avoid 'Header' hide the 'Section' */
+    padding-top: 5px;
+    scroll-margin-top: 115px; /* avoid 'Header' hide the 'Section' */
     text-align: justify;
 }
