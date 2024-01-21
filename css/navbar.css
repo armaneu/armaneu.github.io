@@ -22,6 +22,7 @@
 }
 
 .h1div h1 {
+    font-size: 32px;
     margin: 0 var(--margin); /* reset margin */
     line-height: 60px;
     min-width: var(--min-width);
@@ -63,43 +64,30 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    padding: 0;
 }
 
 .menu li:hover {
     background-color: var(--navbar-hover-color);
 }
 
-/* Open and Close buttons */
-#open-menu, 
-#close-menu {
-    display: none;
-    margin: auto var(--margin);
-    padding: 0;
-    border: 0;
-    background-color: var(--theme-color);
-}
-
-#onClickOpenMenu {
-    visibility: hidden;
-}
-
-#onClickCloseMenu {
-    visibility: hidden;
-}
 
 
 
 /* Responsive */
 @media screen and (max-width: 632px) {
     
-   
+    /* Open / Close button */
     .h1div, .open_close_btn {
         display: inline-block;
         vertical-align: middle;
         margin-left: var(--margin);
     }
 
-    /* Open / Close button */
+    .h1div h1 {
+        font-size: 24px;
+    }
+
     .open_close_btn {
         display: inline-block;
         cursor: pointer;
@@ -129,39 +117,29 @@
     }
 
 
-
-
     /* Menu */
-    .menu {
-        *display: block;
-        *display: flex;  /* horizontal align of internal items */
-        *justify-content: flex-end;  /* pull the items to the right */
-        *list-style: none; /* removes the bullets */
-        *margin: 0 auto;  /* reset margin */
-        *padding: 0; /* reset padding */
-        *text-align: center;
-        *align-items: center;
-        *width: var(--max-width); 
-        
-        *visibility: hidden;
+    .menu {        
         flex-direction: column;
-        *position: fixed;
-        *top: 60px;
-        height: 300px;
-        z-index: 100;
+        margin-left: var(--margin);
+        text-align: left;
+        height: calc(6 * 40px); /* 40px height plus each item (six) */
+        z-index: 10;
+
+        *visibility: hidden;
+        *display: inline-block;
     }
     
     .menu li {
         padding: 0 15px;
+        width: 100%;
     }
     
     .menu li a {
         *color: var(--text-color-inverse);
-        *font-size: 16px;
+        font-size: 14px;
         *font-weight: 500;
-        *line-height: 50px;
-        *text-transform: uppercase;
-        *text-align: center;
+        line-height: 40px;
+        *text-align: left;
         *text-decoration: none;
     }
     
