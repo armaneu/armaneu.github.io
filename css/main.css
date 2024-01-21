@@ -1,11 +1,12 @@
 :root {
-    --theme-color: #f8f8f8;
+    --theme-color: whitesmoke;
     --text-color: black;
     --text-color-inverse: var(--theme-color);
     --navbar-theme-color: #333333;
     --navbar-shadow-color: #8a8a8a;
-    --navbar-hover-color: #2ccc39;
+    --navbar-hover-color: blueviolet;
     --margin: 2%;
+    --min-width: 260px;
     --max-width: 1024px;
     --mobile-menu-theme-color: #3a4460;
 }
@@ -28,19 +29,19 @@ body {
     background-color: var(--theme-color);
     color: var(--text-color);
     margin: 0% auto;
+    min-width: var(--min-width);
     max-width: var(--max-width);
 }
 
 main {
-    background-color: aqua;
     margin-top: 110px;
     padding-top: 5px;
 }
 
 article {
-    margin: 0% var(--margin);
-    top: 0%;
-    left: 0%;
+    margin: 0 var(--margin);
+    top: 0;
+    left: 0;
 }
 
 section[id] {

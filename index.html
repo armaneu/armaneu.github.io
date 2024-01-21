@@ -9,18 +9,28 @@
     <meta name="keywords" content="professional, portfolio, software, developer">
     <meta name="favicon" content="https://iconos8.es/icon/9eK5RgdglDbA/curr%C3%ADculum">
     <title>My Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
+
+    <script defer src="js/navbar.js"></script>
 </head>
 
 <body>
     <header class="topheader">
         <div class="topdiv">
-            <h1>My Portfolio</h1>
+            <div class="h1div">
+                <h1>My Portfolio</h1>
+            </div>
+
+            <div class="open_close_btn" onclick="OpenCloseBtn(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
-    
+
         <nav class="topnav">
             <ul class="menu">
                 <li><a href="#profile">Profile</a></li>
@@ -30,12 +40,6 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="open-menu" aria-label="Open menu">
-                <img src="img/menu_squared-open-50x50.png" alt="Open menu">
-            </button>
-            <button class="close-menu" aria-label="Close menu">
-                <img src="img/menu_squared-close-50x50.png" alt="Close menu">
-            </button>
         </nav>
     </header>
 
