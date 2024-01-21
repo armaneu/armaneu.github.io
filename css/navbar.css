@@ -74,7 +74,7 @@
 
 
 
-/* Responsive */
+/* Responsive initial screen*/
 @media screen and (max-width: 632px) {
     
     /* Open / Close button */
@@ -156,3 +156,14 @@
     
 }
 
+
+/* Responsive tabnav*/
+@media screen and (max-width: 632px) {
+    .topnav.responsive {
+        height: calc(6 * 40px);
+    }
+
+    .topnav.responsive .menu {
+        visibility: visible;
+    }
+}
