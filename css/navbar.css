@@ -120,8 +120,7 @@
     /* Menu */
     .menu {        
         flex-direction: column;
-        margin-left: var(--margin);
-        text-align: left;
+        text-align: center;
         height: calc(6 * 40px); /* 40px height plus each item (six) */
         z-index: 10;
 
