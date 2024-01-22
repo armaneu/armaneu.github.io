@@ -24,7 +24,7 @@
                 <h1>My Portfolio</h1>
             </div>
 
-            <div class="open_close_btn" onclick="OpenCloseBtn(this)">
+            <div class="open_close_btn" id="id_open_close_btn" onclick="OpenCloseBtn(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -33,17 +33,17 @@
 
         <nav class="topnav" id="main_topnav">
             <ul class="menu">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a onclick="CloseMenu()" href="#profile">Profile</a></li>
+                <li><a onclick="CloseMenu()" href="#experience">Experience</a></li>
+                <li><a onclick="CloseMenu()" href="#education">Education</a></li>
+                <li><a onclick="CloseMenu()" href="#skills">Skills</a></li>
+                <li><a onclick="CloseMenu()" href="#projects">Projects</a></li>
+                <li><a onclick="CloseMenu()" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main onclick="CloseMenuOnClickMain()">
         <article>
             <section id="profile">
                 <p>Profile: Computer Software Engineer with 9+ years of experience in Object-Oriented Programming
