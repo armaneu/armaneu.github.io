@@ -49,7 +49,7 @@
     padding: 0; /* reset padding */
     text-align: center;
     align-items: center;
-    width: var(--max-width);    
+    width: var(--max-width);
 }
 
 .menu li {
@@ -60,7 +60,7 @@
     color: var(--text-color-inverse);
     font-size: 16px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 42px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -71,9 +71,6 @@
 .menu li:hover {
     background-color: var(--navbar-hover-color);
 }
-
-
-
 
 /* Responsive initial screen*/
 @media screen and (max-width: 632px) {
@@ -86,7 +83,7 @@
     }
 
     .h1div h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .open_close_btn {
@@ -127,31 +124,23 @@
     /* Navigation bar */
     .topnav {
         height: 2px;
-        
-
     }
 
-
     main {
-
         margin-top: 52px;
         padding-top: 5px;
     }
 
     /* Menu */
-    .menu {        
+    .menu {
+        visibility: hidden;
         flex-direction: column;
-        margin-left: var(--margin);
         text-align: center;
         height: calc(6 * 40px); /* 40px height plus each item (six) */
         z-index: 10;
-
-
-        visibility: hidden;
     }
     
     .menu li {
-        padding: 0 15px;
         width: 100%;
     }
     

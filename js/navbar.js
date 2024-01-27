@@ -1,4 +1,5 @@
-function CloseMenuOnClickMain() {
+
+function CloseMenu() {
   var element = document.getElementById("main_topnav");
 
   if (element.className !== "topnav") {
@@ -7,14 +8,6 @@ function CloseMenuOnClickMain() {
     var div = document.getElementById("id_open_close_btn");
     div.classList.toggle("change");
   }
-}
-
-function CloseMenu() {
-  var element = document.getElementById("main_topnav");
-  element.className = "topnav";
-
-  var div = document.getElementById("id_open_close_btn");
-  div.classList.toggle("change");
 }
 
 function ShowHideMenu() {

@@ -46,6 +46,6 @@ article {
 
 section[id] {
     padding-top: 5px;
-    scroll-margin-top: 115px; /* avoid 'Header' hide the 'Section' */
+    scroll-margin-top: 105px; /* avoid 'Header' hide the 'Section' */
     text-align: justify;
 }
