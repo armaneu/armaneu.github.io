@@ -78,7 +78,7 @@
 @media screen and (max-width: 632px) {
     
     /* Open / Close button */
-    .h1div, .open_close_btn {
+    .h1div {
         display: inline-block;
         vertical-align: middle;
         margin-left: var(--margin);
@@ -88,12 +88,16 @@
         font-size: 26px;
     }
 
-    .open_close_btn {
+    .open_close_container {
         display: inline-block;
         position: absolute;
+        right: var(--margin);
+    }
+
+    .open_close_btn {
         cursor: pointer;
-        right: 0;
-        margin: var(--margin);
+        vertical-align: middle;
+        margin: 7.5px var(--margin);
         border: 2px;
         border-style: solid;
         border-radius: 5px;
@@ -121,7 +125,6 @@
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
     }
-
 
     /* Navigation bar */
     .topnav {
