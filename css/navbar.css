@@ -4,12 +4,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
 }
 
 /* Top DIV */
 .topdiv {
     min-width: calc(45px + var(--min-width));
+    background-color: white;
+    border-bottom: 1px solid var(--navbar-theme-color);
 }
 
 /* DIV which contains the H1 element */
@@ -124,11 +126,7 @@
     /* Navigation bar */
     .topnav {
         height: 2px;
-    }
-
-    main {
-        margin-top: 52px;
-        padding-top: 5px;
+        z-index: 10;
     }
 
     /* Menu */
@@ -138,6 +136,9 @@
         text-align: center;
         height: calc(6 * 40px); /* 40px height plus each item (six) */
         z-index: 10;
+        width: 50%;
+        background-color: var(--navbar-theme-color);
+        margin-right: 0;
     }
     
     .menu li {
@@ -147,24 +148,35 @@
     .menu li a {
         font-size: 14px;
         line-height: 40px;
+        text-align: left;
     }
 
+    main {
+        margin-top: 52px;
+        padding-top: 5px;
+    }
 }
 
 
 /* Responsive tabnav*/
 @media screen and (max-width: 632px) {
+    
     .topnav.responsive {
         height: calc(6 * 40px);
+        background-color: transparent;
+        box-shadow: 0px 0px 0px var(--navbar-shadow-color);
     }
 
     .topnav.responsive .menu {
         visibility: visible;
+        z-index: 10;
     }
 
     .topnav, section[id] {
         scroll-margin-top: 55px; /* avoid 'Header' hide the 'Section' */
     }
 
-    
+    .menu {
+        box-shadow: 0px 4px 5px var(--navbar-shadow-color);
+    }
 }
