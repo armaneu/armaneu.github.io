@@ -6,9 +6,11 @@
     --theme-color: whitesmoke;
     --text-color: black;
     --text-color-inverse: var(--theme-color);
-    --navbar-theme-color: #333333;
+    --dark-theme-color: #333333;
+    --navbar-theme-color: var(--dark-theme-color);
     --navbar-shadow-color: #8a8a8a;
     --navbar-hover-color: blueviolet;
+    --elements-backgroud-color: var(--navbar-hover-color);
     --margin: 2%;
     --min-width: 260px;
     --max-width: 1024px;
@@ -35,6 +37,14 @@ body {
     margin: 0% auto;
     min-width: var(--min-width);
     max-width: var(--max-width);
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 main {

@@ -2,7 +2,7 @@
 /*                                NO MOBILE STYLES                                */
 /**********************************************************************************/
 
-/* Top Header */
+/* NO MOBILE STYLES : Top Header */
 .topheader {
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
     background-color: transparent;
 }
 
-/* Top DIV */
+/* NO MOBILE STYLES : Top DIV */
 .topdiv {
     min-width: calc(45px + var(--min-width));
     background-color: white;
@@ -19,7 +19,7 @@
     box-shadow: 0px 4px 5px var(--navbar-shadow-color);
 }
 
-/* DIV which contains the H1 element */
+/* NO MOBILE STYLES : DIV which contains the H1 element */
 .h1div {
     top: 0;
     left: 0;
@@ -28,14 +28,14 @@
     max-width: var(--max-width);
 }
 
+/* NO MOBILE STYLES :  */
 .h1div h1 {
-    font-size: 32px;
     margin: 0 var(--margin); /* reset margin */
     line-height: 60px;
     min-width: var(--min-width);
 }
 
-/* Navigation bar */
+/* NO MOBILE STYLES : Navigation bar */
 .topnavbar {
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@
     max-width: 100%;
 }
 
-/* Menu */
+/* NO MOBILE STYLES : Menu */
 .menu {
     display: flex;  /* horizontal align of internal items */
     justify-content: flex-end;  /* pull the items to the right */
@@ -59,10 +59,12 @@
     width: var(--max-width);
 }
 
+/* NO MOBILE STYLES :  */
 .menu li {
     padding: 0;
 }
 
+/* NO MOBILE STYLES : */
 .menu li a {
     color: var(--text-color-inverse);
     font-size: 16px;
@@ -75,6 +77,134 @@
     display: block;
 }
 
+/* NO MOBILE STYLES : */
 .menu li:hover {
     background-color: var(--navbar-hover-color);
+}
+
+
+
+/**********************************************************************************/
+/*                                  MOBILE STYLES                                 */
+/**********************************************************************************/
+
+/* Responsive initial screen*/
+@media screen and (max-width: 640px) {
+    
+    /* MOBILE STYLES : Open / Close button */
+    .h1div {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: var(--margin);
+    }
+
+    /* MOBILE STYLES : */
+    .openclosediv {
+        display: inline-block;
+        position: absolute;
+        right: var(--margin);
+    }
+
+    /* MOBILE STYLES : */
+    .openclosebuttondiv {
+        cursor: pointer;
+        vertical-align: middle;
+        margin: 7.5px var(--margin);
+        border: 2px;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 1px 4.5px;
+        width: 35px;
+    }
+    
+    /* MOBILE STYLES : */
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #333333;
+        margin: 6px auto;
+        transition: 0.4s;
+    }
+    
+    /* MOBILE STYLES : */
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    /* MOBILE STYLES : */
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    /* MOBILE STYLES : */
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    /* MOBILE STYLES : Navigation bar */
+    .topnavbar {
+        display: none;
+        height: 2px;
+        z-index: 10;
+    }
+
+    /* MOBILE STYLES : Menu */
+    .menu {
+        visibility: hidden;
+        flex-direction: column;
+        text-align: center;
+        height: calc(6 * 40px); /* 40px height plus each item (six) */
+        z-index: 10;
+        width: 175px;
+        background-color: var(--navbar-theme-color);
+        margin-right: 0;
+    }
+    
+    /* MOBILE STYLES : */
+    .menu li {
+        width: 100%;
+    }
+    
+    /* MOBILE STYLES : */
+    .menu li a {
+        font-size: 14px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    /* MOBILE STYLES : */
+    main {
+        margin-top: 52px;
+        padding-top: 3px;
+    }
+}
+
+
+/* Responsive topnavbar and menu */
+@media screen and (max-width: 640px) {
+    
+    /* MOBILE STYLES : */
+    .topnavbar.responsive {
+        display: flex;
+        height: calc(6 * 40px);
+        background-color: transparent;
+        box-shadow: 0px 0px 0px var(--navbar-shadow-color);
+    }
+
+    /* MOBILE STYLES : */
+    .topnavbar.responsive .menu {
+        visibility: visible;
+        z-index: 10;
+    }
+
+    /* MOBILE STYLES : */
+    .topnavbar, section[id] {
+        scroll-margin-top: 55px; /* avoid 'Header' hide the 'Section' */
+    }
+
+    /* MOBILE STYLES : */
+    .menu {
+        box-shadow: 0px 4px 5px var(--navbar-shadow-color);
+    }
 }
