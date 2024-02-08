@@ -1,22 +1,22 @@
 
 function CloseMenu() {
-  var element = document.getElementById("main_topnav");
+  var element = document.getElementById("topnavbar_id");
 
-  if (element.className !== "topnav") {
-    element.className = "topnav";
+  if (element.className !== "topnavbar") {
+    element.className = "topnavbar";
 
-    var div = document.getElementById("id_open_close_btn");
+    var div = document.getElementById("openclosebuttondiv_id");
     div.classList.toggle("change");
   }
 }
 
 function ShowHideMenu() {
-  var element = document.getElementById("main_topnav");
+  var element = document.getElementById("topnavbar_id");
 
-  if (element.className === "topnav") {
+  if (element.className === "topnavbar") {
     element.className += " responsive";
   } else {
-    element.className = "topnav";
+    element.className = "topnavbar";
   }
 }
 

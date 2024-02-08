@@ -11,8 +11,9 @@
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar_mobile.css">
 
     <script defer src="js/navbar.js"></script>
 </head>
@@ -24,8 +25,8 @@
                 <h1>My Portfolio</h1>
             </div>
 
-            <div class="open_close_container">
-                <div class="open_close_btn" id="id_open_close_btn" onclick="OpenCloseBtn(this)">
+            <div class="openclosediv">
+                <div class="openclosebuttondiv" id="openclosebuttondiv_id" onclick="OpenCloseBtn(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -33,7 +34,7 @@
             </div>
         </div>
 
-        <nav class="topnav" id="main_topnav">
+        <nav class="topnavbar" id="topnavbar_id">
             <ul class="menu">
                 <li><a onclick="CloseMenu()" href="#profile">Profile</a></li>
                 <li><a onclick="CloseMenu()" href="#experience">Experience</a></li>
@@ -61,14 +62,36 @@
                     technology and eager to learn new things.</p>
             </section>
             <section id="experience">
-                <p>Experience: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                    qui officia deserunt mollit anim id est laborum.</p>
+                <div class="experiencediv">
+                    <p>Back-End Developer</p>
+                    <p>BESTVISION GROUP</p>
+                    <p>Jul 2022 - Present 1 year 8 months</p>
+                    <p>Lugano, Ticino, Switzerland  (Remote)</p>
+                    <ul>
+                        <li>C++ Back-End Development on Linux environment.</li>
+                        <li>Software Architecture Modeling.</li>
+                    </ul>
+                </div>
+                <div class="experiencediv">
+                    <p>Software Engineer</p>
+                    <p>International Center for Neurological Restoration</p>
+                    <p>May 2017 - Jan 2023 5 years 9 months</p>
+                    <p>Havana, Cuba  (Hibrid)</p>
+                    <ul>
+                        <li>Maintenance of medical software used in neurosurgery, its documentation and customer training.</li>
+                        <li>Medical image processing using MATLAB, MRIcron and FSL on Linux environment.</li>
+                    </ul>
+                </div>
+                <div class="experiencediv">
+                    <p>Software Engineer</p>
+                    <p>National Center for Scientific Research</p>
+                    <p>Feb 2014 - Apr 2017 3 years 3 months</p>
+                    <p>Havana, Cuba  (On-site)</p>
+                    <ul>
+                        <li>Development of maintenance management software for Pharmaceutical Factory equipment.</li>
+                        <li>Creation and maintenance of websites using WordPress CMS on Linux environment.</li>
+                    </ul>
+                </div>
             </section>
             <section id="education">
                 <p>Education: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
