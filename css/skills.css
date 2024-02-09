@@ -1,0 +1,43 @@
+
+#skills {
+    text-align: center;
+}
+
+.skills_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_item {
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px var(--dark-theme-color);
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+
+    .skills_title {
+        font-size: 24px;
+    }
+    
+    .skill_item {
+        font-size: 18px;
+        margin: 15px;
+    }
+}

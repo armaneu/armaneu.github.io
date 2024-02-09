@@ -8,8 +8,8 @@
 }
 
 .profile_title {
+    font-size: 20px;
     font-weight: bold;
-    /*margin: 16px;*/
 }
 
 .profile_description {
@@ -18,24 +18,25 @@
     line-height: 1.3;
     max-width: 450px;
     margin: 20px auto;
+    text-align: justify;
 }
 
 .profile_button {
-    background-color: var(--theme-color);
+    background-color: var(--elements-backgroud-color);
+    color: var(--text-color-inverse);
     transition-duration: 0.4s;
     border: 3px solid var(--elements-backgroud-color);
     font-size: 18px;
-    padding: 0.5em 0.9em;
-    border-radius: 5px;
+    padding: 0.5em 0.8em;
+    border-radius: 7px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 0px 0px 6px var(--dark-theme-color);
 }
 
 .profile_button:hover {
-    background-color: var(--elements-backgroud-color);
+    filter: brightness(150%);
     color: var(--text-color-inverse);
-    border-color: var(--theme-color);
-    font-size: 22px;
 }
 
 .profile_photo_div {
@@ -46,7 +47,9 @@
     max-width: 300px;
     width: 80%;
     border-radius: 50%;
-    box-shadow: 0px 4px 5px var(--navbar-shadow-color);
+    box-shadow: 0px 0px 15px var(--dark-theme-color);
+    padding: 5px;
+    background-color: var(--elements-backgroud-color);
 }
 
 
@@ -66,17 +69,27 @@
         margin-bottom: 0;
     }
 
-    .profile_photo {
-        margin: 20px auto;
-        max-width: 300px;
-        width: 100%;
+    .profile_title {
+        font-size: 24px;
+        font-weight: bold;
     }
 
     .profile_description {
         font-size: 18px;
         font-weight: 500;
-        line-height: 1.3;
+        line-height: 1.2;
         max-width: 640px;
+        margin: 20px auto;
+    }
+
+    .profile_photo_div {
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_photo {
         margin: 20px auto;
     }
 }
