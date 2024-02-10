@@ -50,7 +50,7 @@
     width: 80%;
     border-radius: 50%;
     box-shadow: 0px 0px 15px var(--dark-theme-color);
-    padding: 5px;
+    padding: 4px;
     background-color: var(--elements-backgroud-color);
 }
 
