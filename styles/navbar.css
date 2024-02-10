@@ -13,6 +13,7 @@
 
 /* NO MOBILE STYLES : Top DIV */
 .topdiv {
+    display: flex;
     min-width: calc(45px + var(--min-width));
     background-color: white;
     border-bottom: 1px solid var(--navbar-theme-color);
@@ -23,16 +24,14 @@
 .h1div {
     top: 0;
     left: 0;
-    margin: 0 auto;
+    margin: 0 auto 0 var(--margin);
     max-height: 60px;
-    max-width: var(--max-width);
 }
 
 /* NO MOBILE STYLES :  */
 .h1div h1 {
-    margin: 0 var(--margin); /* reset margin */
+    margin: 0; /* reset margin */
     line-height: 60px;
-    min-width: var(--min-width);
 }
 
 /* NO MOBILE STYLES : Navigation bar */
@@ -93,23 +92,22 @@
     
     /* MOBILE STYLES : Open / Close button */
     .h1div {
-        display: inline-block;
         vertical-align: middle;
         margin-left: var(--margin);
     }
 
     /* MOBILE STYLES : */
     .openclosediv {
-        display: inline-block;
-        position: absolute;
-        right: var(--margin);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: var(--margin);
     }
 
     /* MOBILE STYLES : */
     .openclosebuttondiv {
         cursor: pointer;
         vertical-align: middle;
-        margin: 7.5px var(--margin);
         border: 2px;
         border-style: solid;
         border-radius: 5px;
