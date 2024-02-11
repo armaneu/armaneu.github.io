@@ -18,6 +18,7 @@
     background-color: white;
     border-bottom: 1px solid var(--navbar-theme-color);
     box-shadow: 0px 4px 5px var(--navbar-shadow-color);
+    max-height: 50px;
 }
 
 /* NO MOBILE STYLES : DIV which contains the H1 element */
@@ -25,13 +26,12 @@
     top: 0;
     left: 0;
     margin: 0 auto 0 var(--margin);
-    max-height: 60px;
 }
 
 /* NO MOBILE STYLES :  */
 .h1div h1 {
     margin: 0; /* reset margin */
-    line-height: 60px;
+    line-height: 50px;
 }
 
 /* NO MOBILE STYLES : Navigation bar */
