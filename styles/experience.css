@@ -103,7 +103,7 @@
         top: 22px;
         width: 0;
         z-index: 1;
-        right: 30px;
+        right: 31px;
         border: medium solid var(--flame);
         border-width: 10px 0 10px 10px;
         border-color: transparent transparent transparent var(--flame);
@@ -117,7 +117,7 @@
         top: 22px;
         width: 0;
         z-index: 1;
-        left: 30px;
+        left: 31px;
         border: medium solid var(--flame);
         border-width: 10px 10px 10px 0;
         border-color: transparent var(--flame) transparent transparent;
