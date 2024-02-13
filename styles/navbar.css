@@ -9,6 +9,7 @@
     left: 0;
     width: 100%;
     background-color: transparent;
+    z-index: 100;
 }
 
 /* NO MOBILE STYLES : Top DIV */
@@ -25,7 +26,9 @@
 .h1div {
     top: 0;
     left: 0;
-    margin: 0 auto 0 var(--margin);
+    *margin: 0 auto 0 var(--margin);
+    margin: 0 auto;
+    *margin-left: var(--margin);
 }
 
 /* NO MOBILE STYLES :  */
@@ -50,7 +53,7 @@
 .menu {
     display: flex;  /* horizontal align of internal items */
     justify-content: flex-end;  /* pull the items to the right */
-    list-style: none; /* removes the bullets */
+    list-style-type: none; /* removes the bullets */
     margin: 0 auto;  /* reset margin */
     padding: 0; /* reset padding */
     text-align: center;
@@ -67,7 +70,7 @@
 .menu li a {
     color: var(--text-color-inverse);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 42px;
     text-transform: uppercase;
     text-align: center;
@@ -120,7 +123,7 @@
         width: 30px;
         height: 5px;
         border-radius: 2px;
-        background-color: #333333;
+        background-color: var(--black);
         margin: 6px auto;
         transition: 0.4s;
     }

@@ -3,14 +3,25 @@
 /**********************************************************************************/
 
 :root {
-    --theme-color: whitesmoke;
-    --text-color: black;
+    /* Coolors Exported Palette - https://coolors.co/d36135-7fb069-ece4b7-e6aa68-02020b */
+    /* CSS HEX */
+    --flame: #d36135ff;
+    --asparagus: #7fb069ff;
+    --vanilla: #ece4b7ff;
+    --fawn: #e6aa68ff;
+    --black: #02020bff;
+    /* CSS COLORS USED */
+    --theme-color: var(--vanilla);
+    --middle-theme-color: #8a8a8a;
+    --dark-theme-color: var(--black);
+    --secondary-theme-color: rgb(220, 210, 240);
+    --text-color: var(--black);
+    --elements-backgroud-color: var(--flame);
+    --bg-opacity: 1;
     --text-color-inverse: var(--theme-color);
-    --dark-theme-color: #333333;
     --navbar-theme-color: var(--dark-theme-color);
-    --navbar-shadow-color: #8a8a8a;
-    --navbar-hover-color: blueviolet;
-    --elements-backgroud-color: var(--navbar-hover-color);
+    --navbar-shadow-color: var(--middle-theme-color);
+    --navbar-hover-color: var(--elements-backgroud-color);
     --margin: 2%;
     --min-width: 260px;
     --max-width: 1024px;
@@ -31,7 +42,7 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Helvetica, 'Lato', sans-serif;
     background-color: var(--theme-color);
     color: var(--text-color);
     margin: 0% auto;
@@ -70,7 +81,9 @@ article {
 }
 
 section[id] {
+    font-size: 16px;
     padding-top: 5px;
     scroll-margin-top: 105px; /* avoid 'Header' hide the 'Section' */
     text-align: justify;
+    background-color: var(--theme-color);
 }
