@@ -1,0 +1,105 @@
+
+/**********************************************************************************/
+/*                                  MOBILE STYLES                                 */
+/**********************************************************************************/
+
+#contact {
+    background-color: var(--elements-backgroud-color);
+    color: var(--text-color-inverse);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#contact h2,
+#contact p,
+#contact ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact_form {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.contact_form input,
+.contact_form textarea {
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contact_form textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.contact_form_submit {
+    width: 100%;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--text-color-inverse);
+    transition-duration: 0.4s;
+    border: 3px solid var(--fawn);
+    padding: 0.5em 0.8em;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px var(--dark-theme-color);
+    cursor: pointer;
+}
+
+.contact_form_submit:hover {
+    box-shadow: 0px 0px 12px var(--dark-theme-color); 
+}
+
+.contact_form_group {
+    display: grid;
+    gap: 3px;
+}
+
+.contact_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact_social_nav {
+    *display: flex;
+}
+
+.contact_social_menu {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 25px;
+    justify-content: center;
+}
+
+.contact_social_menu img {
+    height: 30px;
+}
+
+.contact_social_menu img:hover {
+    filter: drop-shadow(0px 0px 5px var(--theme-color));
+}
+
+
+
+/**********************************************************************************/
+/*                                NO MOBILE STYLES                                */
+/**********************************************************************************/
+
+@media screen and (min-width: 640px) {
+
+    #contact {
+        background-color: var(--elements-backgroud-color);
+        color: var(--text-color-inverse);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px 70px;
+        box-sizing: border-box;
+    }
+}
