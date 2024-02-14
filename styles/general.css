@@ -28,6 +28,10 @@
     --mobile-menu-theme-color: #3a4460;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
