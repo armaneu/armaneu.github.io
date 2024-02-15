@@ -19,16 +19,16 @@
 }
 
 .profile_button {
-    background-color: var(--black);
+    background-color: var(--dark-theme-color);
     color: var(--text-color-inverse);
-    transition-duration: 0.4s;
     border: 3px solid var(--elements-backgroud-color);
+    box-shadow: 0px 0px 8px var(--dark-theme-color);
+    transition-duration: 0.4s;
     font-size: 18px;
     padding: 0.5em 0.8em;
     border-radius: 7px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0px 0px 8px var(--dark-theme-color);
 }
 
 .profile_button:hover {
