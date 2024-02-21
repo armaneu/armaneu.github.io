@@ -3,29 +3,35 @@
 /**********************************************************************************/
 
 :root {
-    /* Coolors Exported Palette - https://coolors.co/d36135-7fb069-ece4b7-e6aa68-02020b */
-    /* CSS HEX */
-    --flame: #d36135ff;
-    --asparagus: #7fb069ff;
-    --vanilla: #ece4b7ff;
-    --fawn: #e6aa68ff;
-    --black: #02020bff;
-    /* CSS COLORS USED */
-    --theme-color: var(--vanilla);
-    --middle-theme-color: #8a8a8a;
-    --dark-theme-color: var(--black);
-    --secondary-theme-color: rgb(220, 210, 240);
-    --text-color: var(--black);
-    --elements-backgroud-color: var(--flame);
-    --bg-opacity: 1;
-    --text-color-inverse: var(--theme-color);
-    --navbar-theme-color: var(--dark-theme-color);
-    --navbar-shadow-color: var(--middle-theme-color);
+    /* Color Hunt Palette 2650732d95969ad0c2f1fada - https://colorhunt.co/palette/2650732d95969ad0c2f1fada */
+    --color-01: #265073;
+    --color-02: #2D9596;
+    --color-03: #9AD0C2;
+    --color-04: #F1FADA;
+    /* Other colors */
+    --shadow: #808080;
+    --black: #000000;
+
+    /* Theme colors */
+    --theme-color: var(--color-04);
+    --theme-color-dark: var(--black);
+    --elements-backgroud-color: var(--color-01);
+    --elements-backgroud-color-alter: var(--color-02);
+    --elements-backgroud-color-other: var(--color-03);
+
+    /* Navbar colors */
+    --navbar-theme-color: var(--theme-color-dark);
+    --navbar-shadow-color: var(--shadow);
     --navbar-hover-color: var(--elements-backgroud-color);
+    
+    /* Font text colors */
+    --text-color: var(--black);
+    --text-color-inverse: var(--theme-color);
+    
+    /* Settings */
     --margin: 2%;
     --min-width: 260px;
     --max-width: 1024px;
-    --mobile-menu-theme-color: #3a4460;
 }
 
 * {

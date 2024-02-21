@@ -123,7 +123,7 @@
         width: 30px;
         height: 5px;
         border-radius: 2px;
-        background-color: var(--black);
+        background-color: var(--theme-color-dark);
         margin: 6px auto;
         transition: 0.4s;
     }

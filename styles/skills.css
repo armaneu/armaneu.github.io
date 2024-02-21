@@ -21,7 +21,10 @@
 .skill_item {
     font-size: 16px;
     font-weight: 500;
-    box-shadow: 0px 4px 10px var(--dark-theme-color);
+    color: var(--text-color-inverse);
+    font-weight: 550;
+    background-color: var(--elements-backgroud-color-alter);
+    box-shadow: 0px 4px 10px var(--theme-color-dark);
     border-radius: 42px;
     padding: 0.5em 0.7em;
     margin: 10px;
