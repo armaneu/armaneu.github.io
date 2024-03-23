@@ -43,16 +43,31 @@ html {
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato/Lato-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
-         url('../fonts/Lato/Lato-Regular.ttf') format('woff2'),             /* Super Modern Browsers */
-         url('../fonts/Lato/Lato-Regular.ttf') format('woff'),              /* Pretty Modern Browsers */
-         url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),          /* Safari, Android, iOS */
-         url('../fonts/Lato/Lato-Regular.ttf') format('svg');               /* Legacy iOS */
+    font-family: 'et-book';
+    src: url('../fonts/et-book/etbookot-roman-webfont.woff2') format('woff2'),  /* Super Modern Browsers */
+         url('../fonts/et-book/etbookot-roman-webfont.woff') format('woff');    /* Pretty Modern Browsers */
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/et-book/etbookot-italic-webfont.woff2') format('woff2'),  /* Super Modern Browsers */
+         url('../fonts/et-book/etbookot-italic-webfont.woff') format('woff');    /* Pretty Modern Browsers */
+         font-weight: normal;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/et-book/etbookot-bold-webfont.woff2') format('woff2'),  /* Super Modern Browsers */
+         url('../fonts/et-book/etbookot-bold-webfont.woff') format('woff');    /* Pretty Modern Browsers */
+         font-weight: bold;
+         font-style: normal;
 }
 
 body {
-    font-family: Helvetica, 'Lato', sans-serif;
+    font-family: 'et-book', Helvetica, sans-serif;
     background-color: var(--theme-color);
     color: var(--text-color);
     margin: 0% auto;
